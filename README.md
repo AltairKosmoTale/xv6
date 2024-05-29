@@ -9,7 +9,17 @@
 4. make clean
 5. make qemu-nox QEMU=$QEMU
 - - -
-### 3rd week:  
+### 4~5th week: Round Robin based Priority Queue Scheduler  
+- defs.h : set_proc_priority, get_proc_priority  
+- syscall.c  : sys_set_proc_priority, sys_get_proc_priority 추가  
+- syscall.h : set_proc_priority, get_proc_priority에 대한 시스템콜 번호 선언  
+- sysproc.c : sys_set_proc_priority, sys_get_proc_priority에 대한 wrapper 구현  
+- user.h : set_proc_priority, get_proc_priority 선언 추가  
+- usys.S : set_proc_priority, get_proc_priority SYSCALL 선언  
+- proc.c : procdump 함수 수정, scheduler 함수 aging logic 추가, set_proc_priority, get_proc_priority 함수 구현  
+- proc.h : proc구조체에 priority, count 멤버변수 추가 
+- - -
+### 3rd week: test user program  
 - helloworld.c : test user program  
 - Makefile : helloworld.c 추가  
 - - -
