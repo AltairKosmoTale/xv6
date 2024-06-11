@@ -18,6 +18,7 @@
 - usys.S : set_proc_priority, get_proc_priority SYSCALL 선언  
 - proc.c : procdump 함수 수정, scheduler 함수 aging logic 추가, set_proc_priority, get_proc_priority 함수 구현  
 - proc.h : proc구조체에 priority, count 멤버변수 추가 
+- proctest.c : Test 함수  
 - - -
 ### 3rd week: test user program  
 - helloworld.c : test user program  
