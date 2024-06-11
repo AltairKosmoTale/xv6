@@ -184,6 +184,7 @@ UPROGS=\
 	_helloworld\
 	_proctest\
 	_loop\
+	_cow\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)
@@ -259,6 +260,7 @@ EXTRA=\
 	helloworld.c\
 	proctest.c\
 	loop.c\
+	cow.c\
 
 dist:
 	rm -rf dist
